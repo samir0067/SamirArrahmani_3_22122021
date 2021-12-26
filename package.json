@@ -1,0 +1,14 @@
+{
+  "name": "samirarrahmani_3_22122021",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/samir0067/SamirArrahmani_3_22122021.git",
+  "author": "samir",
+  "license": "MIT",
+  "scripts": {
+    "sass": "node_modules/.bin/node-sass --watch ./scss/styles.scss ./css/styles.css --style expanded --no-source-map"
+  },
+  "dependencies": {
+    "node-sass": "^7.0.0"
+  }
+}
