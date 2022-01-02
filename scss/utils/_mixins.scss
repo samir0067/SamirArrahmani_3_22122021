@@ -1,0 +1,31 @@
+@import "variables";
+@import "functions";
+
+@mixin border($color:$colorPrimary) {
+  border: .1rem solid $color;
+}
+
+@mixin textShadow($shiftRight: 1px, $shiftDown: 1px, $blur: 1px, $color: rgba(0,0,0,0.2)) {
+  text-shadow: $shiftRight $shiftDown $blur $color;
+}
+
+@mixin boxShadow($shiftRight: 3px, $shiftDown: 3px, $blur: 9px, $spread: 2px, $color: rgba(0,0,0,0.2)) {
+  box-shadow: $shiftRight $shiftDown $blur $spread $color;
+}
+
+@mixin btn {
+  @include boxShadow;
+  cursor: pointer;
+  border: none;
+  border-radius: 100px;
+  color: $colorWhite;
+  background: $colorButtons;
+  padding: 21px 24px;
+  margin: 35px auto;
+  &:hover {
+    background: darken($colorPrimary, 5%);
+  }
+  &:focus {
+    background: lighten($colorSecondary, 5%);
+  }
+}

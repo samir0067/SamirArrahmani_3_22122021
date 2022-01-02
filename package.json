@@ -1,14 +1,17 @@
 {
   "name": "samirarrahmani_3_22122021",
   "version": "1.0.0",
+  "description": "sit responsive with choice of Ohmyfood restaurants",
   "main": "index.js",
   "repository": "https://github.com/samir0067/SamirArrahmani_3_22122021.git",
   "author": "samir",
   "license": "MIT",
+  "browserslist": [
+    "last 4 versions"
+  ],
   "scripts": {
-    "sass": "node_modules/.bin/node-sass --watch ./scss/styles.scss ./css/styles.css --style expanded --no-source-map"
-  },
-  "dependencies": {
-    "node-sass": "^7.0.0"
+    "sass": "sass --watch ./scss/main.scss ./public/css/style.css",
+    "sassMin": "sass --watch ./sass/main.scss ./public/css/style-min.css --style compressed",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
   }
 }

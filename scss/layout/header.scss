@@ -1,0 +1,60 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.header {
+  @media (min-width: 600px) {
+    justify-content: space-around;
+  }
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__logoContainer {
+    @media (min-width: 600px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    width: 100%;
+    text-align: center;
+
+    &__logo {
+      width: 190px;
+      margin: 20px auto;
+    }
+
+    &__location {
+      @media (min-width: 600px) {
+        background-color: $colorWhite;
+        @include boxShadow(0px, 0px, 0px, 0px);
+        margin: auto;
+      }
+      padding: 20px 0;
+      font-weight: bolder;
+      @include boxShadow(0px, -4px, 4px, 0px);
+      background-color: lighten($colorBlack, 85%);
+    }
+  }
+
+  &__titleContainer {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: lighten($colorBlack, 97%);
+    width: inherit;
+
+    &__title {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    &__subtitle {
+      text-align: center;
+    }
+  }
+
+}
+
+
