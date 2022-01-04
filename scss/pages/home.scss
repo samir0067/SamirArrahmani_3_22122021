@@ -1,0 +1,78 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+
+.sectionFunctioning {
+  padding: 55px 15px;
+}
+
+.functioning {
+  @media (min-width: 600px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__number {
+    @media (min-width: 600px) {
+      left: 0;
+      top: 65px;
+    }
+    text-align: center;
+    background-color: $colorPrimary;
+    color: $colorWhite;
+    border-radius: 50%;
+    padding: 7px;
+    width: 29px;
+    height: 29px;
+    position: relative;
+    left: -13px;
+    top: 49px;
+  }
+
+  &__btn {
+    @media (min-width: 600px) {
+      margin: 15px;
+    }
+    @include boxShadow(3px, 3px, 9px, 2px, lighten($colorBlack, 93%));
+    background-color: lighten($colorBlack, 98%);
+    display: flex;
+    text-align: start;
+    padding: 26px 30px;
+    border-radius: 22px;
+    border: none;
+    width: 305px;
+
+    &:hover {
+      background-color: lighten($colorPrimary, 35%);
+    }
+
+    &__icon {
+      width: 22px;
+      height: 22px;
+      margin-right: 20px;
+      font-size: 21px;
+      color: lighten($colorBlack, 62%);
+
+      &:hover {
+        color: $colorPrimary;
+      }
+    }
+  }
+}
+
+.sectionRestaurants {
+  background-color: lighten($colorBlack, 96.5%);
+  padding: 50px 15px;
+}
+
+.restaurants {
+
+}
+
+
