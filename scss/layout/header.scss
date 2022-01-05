@@ -18,12 +18,10 @@
     }
     width: 100%;
     text-align: center;
-
     &__logo {
       width: 190px;
       margin: 20px auto;
     }
-
     &__location {
       @media (min-width: 600px) {
         background-color: $colorWhite;
@@ -40,16 +38,14 @@
   &__titleContainer {
     padding: 20px;
     display: flex;
+    width: inherit;
     align-items: center;
     flex-direction: column;
     background-color: lighten($colorBlack, 96.5%);
-    width: inherit;
-
     &__title {
       text-align: center;
       margin: 20px 0;
     }
-
     &__subtitle {
       text-align: center;
     }
