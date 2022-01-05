@@ -175,6 +175,11 @@ p {
   right: 14px;
   top: 49px;
 }
+@media (min-width: 600px) {
+  .functioning__number {
+    left: 15px;
+  }
+}
 .functioning__btn {
   box-shadow: 3px 4px 9px 2px #e6e6e6;
   cursor: pointer;
@@ -186,7 +191,13 @@ p {
   text-align: start;
   padding: 26px;
 }
-@media (max-width: 351px) {
+@media (min-width: 600px) {
+  .functioning__btn {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 350px) {
   .functioning__btn {
     width: 280px;
   }
