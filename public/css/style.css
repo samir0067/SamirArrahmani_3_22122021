@@ -236,6 +236,12 @@ p {
   background-color: #ffffff;
   box-shadow: 3px 4px 9px 2px #e6e6e6;
 }
+@media (min-width: 600px) {
+  .restaurants__card {
+    width: 390px;
+    margin: 10px;
+  }
+}
 .restaurants__card__img {
   width: 100%;
   border-radius: 17px 17px 0 0;
@@ -257,6 +263,11 @@ p {
   position: relative;
   left: 11.5%;
   bottom: 160px;
+}
+@media (min-width: 600px) {
+  .restaurants__card__description__btn {
+    left: 20%;
+  }
 }
 @media (max-width: 350px) {
   .restaurants__card__description__btn {
