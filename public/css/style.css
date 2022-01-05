@@ -87,10 +87,10 @@ button {
 .header__titleContainer {
   padding: 20px;
   display: flex;
+  width: inherit;
   align-items: center;
   flex-direction: column;
   background-color: #f6f6f6;
-  width: inherit;
 }
 .header__titleContainer__title {
   text-align: center;
@@ -123,48 +123,42 @@ button {
   background-color: #9356DC;
   color: #ffffff;
   border-radius: 50%;
-  padding: 7px;
-  width: 29px;
-  height: 29px;
+  padding: 6px;
+  width: 27px;
+  height: 27px;
   position: relative;
-  left: -13px;
+  left: -16px;
   top: 49px;
-}
-@media (min-width: 600px) {
-  .functioning__number {
-    left: 0;
-    top: 65px;
-  }
 }
 .functioning__btn {
   box-shadow: 3px 3px 9px 2px #ededed;
+  cursor: pointer;
+  border: none;
+  border-radius: 22px;
+  width: 305px;
   background-color: #fafafa;
   display: flex;
   text-align: start;
-  padding: 26px 30px;
-  border-radius: 22px;
-  border: none;
-  width: 305px;
+  padding: 26px;
+  font-size: 15px;
 }
-@media (min-width: 600px) {
+@media (max-width: 351px) {
   .functioning__btn {
-    margin: 15px;
+    width: 280px;
   }
 }
 .functioning__btn:hover {
   background-color: #f2eafb;
 }
+.functioning__btn:hover .functioning__btn__icon:before {
+  color: #9356DC;
+}
 .functioning__btn__icon {
-  width: 22px;
-  height: 22px;
+  width: 25px;
   margin-right: 20px;
   font-size: 21px;
   color: #9e9e9e;
 }
-.functioning__btn__icon:hover {
-  color: #9356DC;
-}
-
 .sectionRestaurants {
   background-color: #f6f6f6;
   padding: 50px 15px;
