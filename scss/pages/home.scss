@@ -3,7 +3,10 @@
 
 
 .sectionFunctioning {
-  padding: 55px 20px;
+  padding: 55px 20px 55px 32px;
+  h1 {
+    margin-left: -15px;
+  }
 }
 
 .functioning {
@@ -64,33 +67,64 @@
 .sectionRestaurants {
   background-color: lighten($colorBlack, 96.5%);
   padding: 50px 20px;
+  h1 {
+    margin-bottom: 23px;
+  }
 }
 
 .restaurants {
   @media (min-width: 601px) {
-    display: flex;
-    flex-direction: row;
   }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   &__card {
     @media (min-width: 601px) {
-      width: 50%;
     }
     width: 100%;
     height: 230px;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     border-radius: 17px;
     background-color: $colorWhite;
     @include boxShadow;
-    &__btn {
-      position: relative;
-      left: 200px;
-      top: 40px;
-    }
     &__img {
       width: 100%;
       border-radius: 17px 17px 0 0;
       object-fit: cover;
       height: 160px;
+    }
+    &__description {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 6px 20px 0 10px;
+      &__btn {
+        @media (max-width: 350px) {
+          left: 15%;
+        }
+        width: 85px;
+        height: 30px;
+        border: none;
+        background-color: $colorTertiary;
+        color: darken($colorTertiary, 37%);
+        position: relative;
+        left: 11.5%;
+        bottom: 160px;
+      }
+      &__info {
+        @media (max-width: 350px) {
+          font-size: 14px;
+          p {
+            font-size: 14px;
+          }
+        }
+        line-height: 1.5;
+      }
+      &__heart {
+        margin-top: 6px;
+        font-size: 23px;
+      }
     }
   }
 }

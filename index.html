@@ -63,27 +63,49 @@
     <h1>Restaurants</h1>
     <div class="restaurants">
       <div class="restaurants__card">
-        <img class="restaurants__card__img" src="public/images/restaurants/la-palette-du-gout.jpg"
-             alt="photo du restaurant la palette du gout"/>
-        <button class="restaurants__card__btn" type="button">Nouveau</button>
+        <img alt="photo du restaurant la palette du gout" class="restaurants__card__img"
+             src="public/images/restaurants/la-palette-du-gout.jpg"/>
         <div class="restaurants__card__description">
           <div class="restaurants__card__description__info">
-            <h3>La palette du goût</h3>
+            <h4>La palette du goût</h4>
             <p>Ménilmontant</p>
           </div>
-          <i class="fas fa-heart restaurants__card__description__heart"></i>
+          <button class="restaurants__card__description__btn" type="button">Nouveau</button>
+          <i class="far fa-heart restaurants__card__description__heart"></i>
         </div>
       </div>
       <div class="restaurants__card">
-        <img class="restaurants__card__img" src="public/images/restaurants/la-note-enchantee.jpg"
-             alt="photo du restaurant la note enchantée"/>
-        <button class="restaurants__card__btn" type="button">Nouveau</button>
+        <img alt="photo du restaurant la note enchantée" class="restaurants__card__img"
+             src="public/images/restaurants/la-note-enchantee.jpg"/>
         <div class="restaurants__card__description">
           <div class="restaurants__card__description__info">
-            <h3>La palette du goût</h3>
-            <p>Ménilmontant</p>
+            <h4>La palette du goût</h4>
+            <p>Charonne</p>
           </div>
-          <i class="fas fa-heart restaurants__card__description__heart"></i>
+          <button class="restaurants__card__description__btn" type="button">Nouveau</button>
+          <i class="far fa-heart restaurants__card__description__heart"></i>
+        </div>
+      </div>
+      <div class="restaurants__card">
+        <img alt="photo du restaurant a la française" class="restaurants__card__img"
+             src="public/images/restaurants/a-la-française.jpg"/>
+        <div class="restaurants__card__description">
+          <div class="restaurants__card__description__info">
+            <h4>À la française</h4>
+            <p>Cité Rouge</p>
+          </div>
+          <i class="far fa-heart restaurants__card__description__heart"></i>
+        </div>
+      </div>
+      <div class="restaurants__card">
+        <img alt="photo du restaurant le delice des sens" class="restaurants__card__img"
+             src="public/images/restaurants/le-delice-des-sens.jpg"/>
+        <div class="restaurants__card__description">
+          <div class="restaurants__card__description__info">
+            <h4>Le délice des sens</h4>
+            <p>Folie-Méricourt</p>
+          </div>
+          <i class="far fa-heart restaurants__card__description__heart"></i>
         </div>
       </div>
     </div>
@@ -91,7 +113,14 @@
 </main>
 
 <!-- Footer -->
-<footer>
+<footer class="footer">
+  <img alt="Logo ohmyfood" class="footer__logo" src="public/images/logo/ohmyfood-white.png"/>
+  <ul class="footer__ul">
+    <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
+    <li><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
+    <li><a href="#">Mentions légales</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
 </footer>
 </body>
 </html>

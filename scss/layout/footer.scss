@@ -1,0 +1,36 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.footer {
+  @media (min-width: 600px) {
+  }
+  width: 100%;
+  height: 190px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: lighten($colorBlack, 25%);
+  padding-left: 20px;
+
+  &__logo {
+    @media (min-width: 600px) {
+    }
+    width: 120px;
+    margin: 25px 0;
+  }
+  &__ul {
+    li {
+      margin-bottom: 7px;
+      a {
+        color: $colorWhite;
+        i {
+          margin-right: 10px;
+          font-size: 15px;
+          width: 25px;
+        }
+      }
+    }
+  }
+}
+
+

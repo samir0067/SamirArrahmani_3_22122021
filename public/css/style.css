@@ -8,6 +8,18 @@
 
 body {
   box-sizing: border-box;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
 }
 
 * {
@@ -20,7 +32,7 @@ body {
   line-height: 1.1;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-weight: 900;
 }
 
@@ -105,8 +117,36 @@ p {
   text-align: center;
 }
 
+.footer {
+  width: 100%;
+  height: 190px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #404040;
+  padding-left: 20px;
+}
+.footer__logo {
+  width: 120px;
+  margin: 25px 0;
+}
+.footer__ul li {
+  margin-bottom: 7px;
+}
+.footer__ul li a {
+  color: #ffffff;
+}
+.footer__ul li a i {
+  margin-right: 10px;
+  font-size: 15px;
+  width: 25px;
+}
+
 .sectionFunctioning {
-  padding: 55px 20px;
+  padding: 55px 20px 55px 32px;
+}
+.sectionFunctioning h1 {
+  margin-left: -15px;
 }
 
 .functioning {
@@ -167,36 +207,65 @@ p {
   background-color: #f6f6f6;
   padding: 50px 20px;
 }
+.sectionRestaurants h1 {
+  margin-bottom: 23px;
+}
 
-@media (min-width: 601px) {
-  .restaurants {
-    display: flex;
-    flex-direction: row;
-  }
+.restaurants {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .restaurants__card {
   width: 100%;
   height: 230px;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
   border-radius: 17px;
   background-color: #ffffff;
   box-shadow: 3px 4px 9px 2px #e6e6e6;
-}
-@media (min-width: 601px) {
-  .restaurants__card {
-    width: 50%;
-  }
-}
-.restaurants__card__btn {
-  position: relative;
-  left: 200px;
-  top: 40px;
 }
 .restaurants__card__img {
   width: 100%;
   border-radius: 17px 17px 0 0;
   object-fit: cover;
   height: 160px;
+}
+.restaurants__card__description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 6px 20px 0 10px;
+}
+.restaurants__card__description__btn {
+  width: 85px;
+  height: 30px;
+  border: none;
+  background-color: #99E2D0;
+  color: #2a947a;
+  position: relative;
+  left: 11.5%;
+  bottom: 160px;
+}
+@media (max-width: 350px) {
+  .restaurants__card__description__btn {
+    left: 15%;
+  }
+}
+.restaurants__card__description__info {
+  line-height: 1.5;
+}
+@media (max-width: 350px) {
+  .restaurants__card__description__info {
+    font-size: 14px;
+  }
+  .restaurants__card__description__info p {
+    font-size: 14px;
+  }
+}
+.restaurants__card__description__heart {
+  margin-top: 6px;
+  font-size: 23px;
 }
 
 /*# sourceMappingURL=style.css.map */
