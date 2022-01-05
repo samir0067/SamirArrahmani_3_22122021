@@ -1,19 +1,24 @@
 @import "../utils/variables";
 
-body {
+* {
   font-family: 'Roboto', sans-serif;
+}
+
+body {
   color: $colorBlack;
   font-size: 17px;
   line-height: 1.1;
 }
 
-h1, h2 {
-  font-family: 'Roboto', sans-serif;
+h1, h2, h3 {
   font-weight: 900;
 }
 
 button {
-  font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 15px;
+}
+
+p {
+  font-size: 16px;
 }
