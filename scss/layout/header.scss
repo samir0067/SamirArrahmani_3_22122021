@@ -25,12 +25,12 @@
     &__location {
       @media (min-width: 600px) {
         background-color: $colorWhite;
-        @include boxShadow(0px, 0px, 0px, 0px);
+        box-shadow: none;
         margin: auto;
       }
       padding: 20px 0;
       font-weight: bolder;
-      @include boxShadow(0px, -4px, 4px, 0px);
+      @include boxShadow(0px, -4px, 4px, 0px, lighten($colorBlack, 85%));
       background-color: lighten($colorBlack, 85%);
     }
   }

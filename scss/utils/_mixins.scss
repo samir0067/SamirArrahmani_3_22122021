@@ -9,12 +9,12 @@
   text-shadow: $shiftRight $shiftDown $blur $color;
 }
 
-@mixin boxShadow($shiftRight: 3px, $shiftDown: 3px, $blur: 9px, $spread: 2px, $color: rgba(0,0,0,0.2)) {
+@mixin boxShadow($shiftRight: 3px, $shiftDown: 4px, $blur: 9px, $spread: 2px, $color: lighten($colorBlack, 90%)) {
   box-shadow: $shiftRight $shiftDown $blur $spread $color;
 }
 
 @mixin btn {
-  @include boxShadow;
+  @include boxShadow($color: lighten($colorBlack, 80%));
   cursor: pointer;
   border: none;
   border-radius: 100px;
