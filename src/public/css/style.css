@@ -442,6 +442,7 @@ i {
 .restaurants__card {
   animation: fadeIn 3s;
   width: 100%;
+  max-width: 344px;
   height: 230px;
   margin-bottom: 18px;
   border-radius: 17px;
@@ -470,20 +471,16 @@ i {
   width: 85px;
   height: 30px;
   border: none;
+  font-size: 16px;
   background-color: #99E2D0;
   color: #2a947a;
   position: relative;
-  left: 11.5%;
+  left: 20%;
   bottom: 160px;
-}
-@media (min-width: 768px) {
-  .restaurants__card__description__btn {
-    left: 20%;
-  }
 }
 @media (max-width: 375px) {
   .restaurants__card__description__btn {
-    left: 15%;
+    left: 22%;
   }
 }
 .restaurants__card__description__info {

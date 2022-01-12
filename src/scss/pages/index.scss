@@ -84,6 +84,7 @@
   &__card {
     animation: fadeIn 3s;
     width: 100%;
+    max-width: 344px;
     height: 230px;
     margin-bottom: 18px;
     border-radius: 17px;
@@ -107,16 +108,14 @@
         width: 85px;
         height: 30px;
         border: none;
+        font-size: 16px;
         background-color: $colorTertiary;
         color: darken($colorTertiary, 37%);
         position: relative;
-        left: 11.5%;
+        left: 20%;
         bottom: 160px;
-        @media (min-width: map-get($breakpoints, tablet)) {
-          left: 20%;
-        }
         @media (max-width: map-get($breakpoints, mobile)) {
-          left: 15%;
+          left: 22%;
         }
       }
       &__info {
