@@ -63,10 +63,7 @@
     &__icon {
       width: 25px;
       margin-right: 20px;
-      font-size: 21px;
       color: lighten($colorBlack, 62%);
-      &:hover {
-      }
     }
   }
 }
@@ -80,8 +77,6 @@
 }
 
 .restaurants {
-  @media (min-width: 600px) {
-  }
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -135,7 +130,6 @@
       }
       &__heart {
         margin-top: 6px;
-        font-size: 23px;
       }
     }
   }

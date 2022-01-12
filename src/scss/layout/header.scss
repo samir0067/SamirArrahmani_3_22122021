@@ -18,6 +18,12 @@
     }
     width: 100%;
     text-align: center;
+    &__icon {
+      font-size: 18px;
+      position: absolute;
+      left: 20px;
+      top: 20px;
+    }
     &__logo {
       width: 190px;
       margin: 10px auto;
@@ -32,6 +38,9 @@
       font-weight: bolder;
       @include boxShadow(0px, -4px, 4px, 0px, lighten($colorBlack, 85%));
       background-color: lighten($colorBlack, 85%);
+      & i {
+        margin-right: 15px;
+      }
     }
   }
 
