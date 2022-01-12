@@ -1,0 +1,58 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.imageRestaurant {
+  width: 100%;
+  object-fit: cover;
+  height: 273px;
+  margin-bottom: -20px;
+  @media (min-width: map-get($breakpoints, tablet)) {
+    height: 390px;
+  }
+  @media (min-width: map-get($breakpoints, laptop)) {
+    height: 450px;
+  }
+}
+
+.menu {
+  border-top-left-radius: 50px 50px;
+  border-top-right-radius: 50px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: lighten($colorBlack, 98%);
+  position: relative;
+  margin-top: -30px;
+  &__title {
+
+    //display: flex;
+    //flex-direction: row;
+    //align-content: center;
+    //justify-content: space-around;
+    //padding: 20px 0;
+    //margin: 20px auto;
+    //& i {
+    //  margin: 5px 0 0 15px;
+    //}
+  }
+  &__subtitle {
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: 30px;
+  }
+  &__border {
+    background-color: $colorTertiary;
+    margin: 6px 30px;
+    width: 50px;
+    height: 3px;
+  }
+  &__seats {
+    @include flexColumn;
+    @media (min-width: map-get($breakpoints, tablet)) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+}
+

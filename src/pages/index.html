@@ -4,6 +4,8 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name=viewport content="width=device-width, initial-scale=1"/>
   <meta name="author" content="Samir Arrahmani"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"/>
@@ -13,9 +15,15 @@
 <body>
 <!-- Header -->
 <header class="header">
-  <div class="header__logoContainer">
-    <img class="header__logoContainer__logo" src="../public/images/logo/ohmyfood.png" alt="Logo ohmyfood"/>
-    <p class="header__logoContainer__location"><i class="fas fa-map-marker-alt"></i> Paris, Belleville</p>
+  <div class="header__container">
+    <div class="header__container__logoContainer">
+      <img class="header__container__logoContainer__logo" src="../public/images/logo/ohmyfood.png" alt="Logo ohmyfood"/>
+    </div>
+    <div class="header__container__locationContainer">
+      <p class="header__container__locationContainer__location">
+        <i class="fas fa-map-marker-alt"></i> Paris, Belleville
+      </p>
+    </div>
   </div>
   <div class="header__titleContainer">
     <h2 class="header__titleContainer__title">Réservez le menu qui vous convient</h2>
@@ -54,8 +62,10 @@
     <h1>Restaurants</h1>
     <div class="restaurants">
       <div class="restaurants__card">
-        <img alt="photo du restaurant la palette du gout" class="restaurants__card__img"
-             src="../public/images/restaurants/la-palette-du-gout.jpg"/>
+        <a href="tastePalette.html">
+          <img alt="photo du restaurant la palette du gout" class="restaurants__card__img"
+               src="../public/images/restaurants/la-palette-du-gout.jpg"/>
+        </a>
         <div class="restaurants__card__description">
           <div class="restaurants__card__description__info">
             <h4><a href="tastePalette.html">La palette du goût</a></h4>
@@ -66,8 +76,10 @@
         </div>
       </div>
       <div class="restaurants__card">
-        <img alt="photo du restaurant la note enchantée" class="restaurants__card__img"
-             src="../public/images/restaurants/la-note-enchantee.jpg"/>
+        <a href="enchantedNote.html">
+          <img alt="photo du restaurant la note enchantée" class="restaurants__card__img"
+               src="../public/images/restaurants/la-note-enchantee.jpg"/>
+        </a>
         <div class="restaurants__card__description">
           <div class="restaurants__card__description__info">
             <h4><a href="enchantedNote.html">La note enchantée</a></h4>
@@ -78,8 +90,10 @@
         </div>
       </div>
       <div class="restaurants__card">
-        <img alt="photo du restaurant a la française" class="restaurants__card__img"
-             src="../public/images/restaurants/a-la-française.jpg"/>
+        <a href="frenchStyle.html">
+          <img alt="photo du restaurant a la française" class="restaurants__card__img"
+               src="../public/images/restaurants/a-la-française.jpg"/>
+        </a>
         <div class="restaurants__card__description">
           <div class="restaurants__card__description__info">
             <h4><a href="frenchStyle.html">À la française</a></h4>
@@ -89,8 +103,10 @@
         </div>
       </div>
       <div class="restaurants__card">
-        <img alt="photo du restaurant le delice des sens" class="restaurants__card__img"
-             src="../public/images/restaurants/le-delice-des-sens.jpg"/>
+        <a href="delightSenses.html">
+          <img alt="photo du restaurant le delice des sens" class="restaurants__card__img"
+               src="../public/images/restaurants/le-delice-des-sens.jpg"/>
+        </a>
         <div class="restaurants__card__description">
           <div class="restaurants__card__description__info">
             <h4><a href="delightSenses.html">Le délice des sens</a></h4>

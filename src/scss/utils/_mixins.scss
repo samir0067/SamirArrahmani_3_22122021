@@ -5,6 +5,10 @@
   border: .1rem solid $color;
 }
 
+@mixin headerShadow {
+  box-shadow: 0 0 8px lighten($colorBlack, 65%);
+}
+
 @mixin textShadow($shiftRight: 1px, $shiftDown: 1px, $blur: 1px, $color: rgba(0,0,0,0.2)) {
   text-shadow: $shiftRight $shiftDown $blur $color;
 }
@@ -13,19 +17,13 @@
   box-shadow: $shiftRight $shiftDown $blur $spread $color;
 }
 
-@mixin btn {
-  @include boxShadow($color: lighten($colorBlack, 80%));
-  cursor: pointer;
-  border: none;
-  border-radius: 100px;
-  color: $colorWhite;
-  background: $colorButtons;
-  padding: 21px 24px;
-  margin: 35px auto;
-  &:hover {
-    background: darken($colorPrimary, 5%);
-  }
-  &:focus {
-    background: lighten($colorSecondary, 5%);
-  }
+
+@mixin flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
 }

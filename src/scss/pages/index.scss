@@ -10,20 +10,17 @@
 }
 
 .functioning {
-  @media (min-width: 600px) {
+  width: 100%;
+  @include flexColumn;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 4s;
+  @media (min-width: map-get($breakpoints, tablet)) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   &__number {
-    @media (min-width: 600px) {
-      left: 15px;
-    }
     text-align: center;
     background-color: $colorPrimary;
     color: $colorWhite;
@@ -34,24 +31,28 @@
     position: relative;
     right: 14px;
     top: 49px;
+    animation: fadeIn 7s;
+    @media (min-width: map-get($breakpoints, tablet)) {
+      left: 15px;
+    }
   }
   &__btn {
-    @media (min-width: 600px) {
-      margin-right: 30px;
-      margin-left: 30px;
-    }
-    @media (max-width: 350px) {
-      width: 280px;
-    }
     @include boxShadow;
+    @include flexRow;
     cursor: pointer;
     border: none;
     border-radius: 22px;
     width: 305px;
     background-color: lighten($colorBlack, 98%);
-    display: flex;
     text-align: start;
-    padding: 26px;
+    padding: 22px;
+    @media (min-width: map-get($breakpoints, tablet)) {
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+    @media (max-width: map-get($breakpoints, mobile)) {
+      width: 280px;
+    }
     &:hover {
       background-color: lighten($colorPrimary, 35%);
       .functioning__btn__icon {
@@ -77,21 +78,21 @@
 }
 
 .restaurants {
-  display: flex;
-  flex-direction: row;
+  @include flexRow;
   flex-wrap: wrap;
   justify-content: center;
   &__card {
-    @media (min-width: 600px) {
-      width: 390px;
-      margin: 10px;
-    }
+    animation: fadeIn 3s;
     width: 100%;
     height: 230px;
     margin-bottom: 18px;
     border-radius: 17px;
     background-color: $colorWhite;
     @include boxShadow;
+    @media (min-width: map-get($breakpoints, tablet)) {
+      width: 390px;
+      margin: 10px;
+    }
     &__img {
       width: 100%;
       border-radius: 17px 17px 0 0;
@@ -99,17 +100,10 @@
       height: 160px;
     }
     &__description {
-      display: flex;
-      flex-direction: row;
+      @include flexRow;
       justify-content: space-between;
       padding: 6px 20px 0 10px;
       &__btn {
-        @media (min-width: 600px) {
-          left: 20%;
-        }
-        @media (max-width: 350px) {
-          left: 15%;
-        }
         width: 85px;
         height: 30px;
         border: none;
@@ -118,15 +112,21 @@
         position: relative;
         left: 11.5%;
         bottom: 160px;
+        @media (min-width: map-get($breakpoints, tablet)) {
+          left: 20%;
+        }
+        @media (max-width: map-get($breakpoints, mobile)) {
+          left: 15%;
+        }
       }
       &__info {
-        @media (max-width: 350px) {
+        line-height: 1.5;
+        @media (max-width: map-get($breakpoints, mobile)) {
           font-size: 14px;
           p {
             font-size: 14px;
           }
         }
-        line-height: 1.5;
       }
       &__heart {
         margin-top: 6px;

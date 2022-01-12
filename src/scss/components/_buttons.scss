@@ -1,5 +1,18 @@
 @import "../utils/mixins";
 
 .btn {
-  @include btn;
+  @include boxShadow($color: lighten($colorBlack, 80%));
+  cursor: pointer;
+  border: none;
+  border-radius: 100px;
+  color: $colorWhite;
+  background: $colorButtons;
+  padding: 21px 24px;
+  margin: 35px auto;
+  &:hover {
+    background: darken($colorPrimary, 5%);
+  }
+  &:focus {
+    background: lighten($colorSecondary, 5%);
+  }
 }

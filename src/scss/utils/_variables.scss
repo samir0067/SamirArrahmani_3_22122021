@@ -3,8 +3,21 @@ $colorSecondary: #FF79DA;
 $colorTertiary: #99E2D0;
 $colorBlack: #000000;
 $colorWhite: #ffffff;
-$colorButtons: linear-gradient(175deg, $colorSecondary 0%, $colorPrimary 100%);
-$breakpoints: (mobile: 599px);
+$colorButtons: linear-gradient(to bottom, $colorSecondary 0%, $colorPrimary 100%);
+
+$breakpoints: (mobile: 375px, tablet: 768px, laptop: 1024px, desktop: 1440px);
+
+$fontShrikhand: 'Shrikhand', sans-serif;
+$fontRoboto: 'Roboto', sans-serif;
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 //$txt-input-palette: (
 //  active: (

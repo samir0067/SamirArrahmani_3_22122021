@@ -2,44 +2,55 @@
 @import "../utils/mixins";
 
 .header {
-  @media (min-width: 600px) {
-    justify-content: space-around;
-  }
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
-
-  &__logoContainer {
-    @media (min-width: 600px) {
+  @media (min-width: map-get($breakpoints, tablet)) {
+    justify-content: space-around;
+  }
+  &__container {
+    width: 100%;
+    text-align: center;
+    @media (min-width: map-get($breakpoints, tablet)) {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
     }
-    width: 100%;
-    text-align: center;
     &__icon {
       font-size: 18px;
       position: absolute;
       left: 20px;
       top: 20px;
     }
-    &__logo {
-      width: 190px;
-      margin: 10px auto;
-    }
-    &__location {
-      @media (min-width: 600px) {
-        background-color: $colorWhite;
+    &__logoContainer {
+      background-color: $colorWhite;
+      position: relative;
+      @include headerShadow;
+      @media (min-width: map-get($breakpoints, tablet)) {
         box-shadow: none;
-        margin: auto;
       }
-      padding: 20px 0;
-      font-weight: bolder;
-      @include boxShadow(0px, -4px, 4px, 0px, lighten($colorBlack, 85%));
+      &__logo {
+        width: 190px;
+        margin: 18px auto 8px auto;
+      }
+    }
+    &__locationContainer {
       background-color: lighten($colorBlack, 85%);
-      & i {
-        margin-right: 15px;
+      @media (min-width: map-get($breakpoints, tablet)) {
+        background-color: $colorWhite;
+      }
+      &__location {
+        font-weight: 600;
+        padding: 18px 0;
+        @media (min-width: map-get($breakpoints, tablet)) {
+          background-color: $colorWhite;
+          box-shadow: none;
+          margin: auto;
+        }
+        & i {
+          margin-right: 15px;
+        }
       }
     }
   }
@@ -59,7 +70,6 @@
       text-align: center;
     }
   }
-
 }
 
 
