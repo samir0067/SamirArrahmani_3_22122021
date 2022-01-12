@@ -24,16 +24,11 @@
   position: relative;
   margin-top: -30px;
   &__title {
-
-    //display: flex;
-    //flex-direction: row;
-    //align-content: center;
-    //justify-content: space-around;
-    //padding: 20px 0;
-    //margin: 20px auto;
-    //& i {
-    //  margin: 5px 0 0 15px;
-    //}
+    @include flexRow;
+    align-content: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    margin: 20px 0;
   }
   &__subtitle {
     font-weight: 500;

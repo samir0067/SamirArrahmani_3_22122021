@@ -181,6 +181,30 @@ i {
     opacity: 1;
   }
 }
+.heartIcon {
+  margin: 4px 0;
+  font-size: 18px;
+  -webkit-text-stroke: 1px #000000;
+  transition: 1s;
+  cursor: pointer;
+  color: #ffffff;
+}
+.heartIcon:hover {
+  color: transparent;
+  background-clip: border-box;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 0 #ffffff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -473,9 +497,6 @@ i {
     font-size: 14px;
   }
 }
-.restaurants__card__description__heart {
-  margin-top: 6px;
-}
 
 @keyframes fadeIn {
   from {
@@ -519,6 +540,14 @@ i {
   background-color: #fafafa;
   position: relative;
   margin-top: -30px;
+}
+.menu__title {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  padding: 20px 0;
+  margin: 20px 0;
 }
 .menu__subtitle {
   font-weight: 500;

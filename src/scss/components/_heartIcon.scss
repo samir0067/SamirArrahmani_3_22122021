@@ -1,0 +1,18 @@
+@import "../utils/mixins";
+
+.heartIcon {
+  margin: 4px 0;
+  font-size: 18px;
+  -webkit-text-stroke: 1px $colorBlack;
+  transition: 1s;
+  cursor: pointer;
+  color: $colorWhite;
+  &:hover {
+    color: transparent;
+    background-clip: border-box;
+    background: linear-gradient(to bottom right, $colorSecondary, $colorPrimary);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 0 $colorWhite;
+
+  }
+}
