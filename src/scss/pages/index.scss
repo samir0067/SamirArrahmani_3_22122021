@@ -1,6 +1,21 @@
 @import "../utils/variables";
 @import "../utils/mixins";
 
+.titleContainer {
+  padding: 20px;
+  display: flex;
+  width: inherit;
+  align-items: center;
+  flex-direction: column;
+  background-color: lighten($colorBlack, 96.5%);
+  &__title {
+    text-align: center;
+    margin: 20px 0;
+  }
+  &__subtitle {
+    text-align: center;
+  }
+}
 
 .sectionFunctioning {
   padding: 55px 20px 55px 32px;
