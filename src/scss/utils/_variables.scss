@@ -7,8 +7,8 @@ $colorButtons: linear-gradient(to bottom, $colorSecondary 0%, $colorPrimary 100%
 
 $breakpoints: (mobile: 375px, tablet: 768px, laptop: 1024px, desktop: 1440px);
 
-$fontShrikhand: 'Shrikhand', sans-serif;
 $fontRoboto: 'Roboto', sans-serif;
+$fontShrikhand: 'Shrikhand', cursive;
 
 @keyframes fadeIn {
   from {
