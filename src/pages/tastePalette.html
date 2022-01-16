@@ -7,6 +7,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap"
+        rel="stylesheet">
   <link rel="stylesheet" href="../public/css/style.css"/>
   <title>La palette du goût</title>
 </head>
@@ -21,136 +25,145 @@
   </div>
 </header>
 
+<!-- Main -->
 <main>
-  <img alt="photo du restaurant la palette du gout" class="imageRestaurant"
+  <!-- image restaurant -->
+  <img alt="photo du restaurant la palette du gout" class="imageMenu"
        src="../public/images/restaurants/la-palette-du-gout.jpg"/>
-  <section class="menu">
-    <div class="menu__title">
+  <!-- title restaurant -->
+  <section class="titleMenu">
       <h1>La palette du goût</h1>
       <div class="heartIcon"><i class="fas fa-heart"></i></div>
-    </div>
-    <h5 class="menu__subtitle">ENTRÉES</h5>
-    <div class="menu__border"></div>
-    <div class="menu__seats">
-      <div class="card">
-        <input class="card__input" type="checkbox" name="pricing" id="card1">
-        <label class="card__label" for="card1">
-          <p class="card__label__title">Fricassée d'escargot</p>
-          <div class="card__label__subContainer">
-            <p class="card__label__subContainer__subtitle">
-              Au piment d'Espelette
-            </p>
-            <span class="card__label__subContainer__price">25€</span>
+  </section>
+  <!-- Menu restaurant -->
+  <section class="menu">
+    <h5 class="menu_title">ENTRÉES</h5>
+    <div class="menu_underline"></div>
+    <div class="menu_cards">
+      <div class="menu_cards_card">
+        <div class="menu_cards_card_container">
+          <div class="menu_cards_card_container_description">
+            <h3 class="menu_cards_card_container_description_title">Fricassée escargot</h3>
+            <div class="menu_cards_card_container_description_submenu">
+              <p class="menu_cards_card_container_description_submenu_subtitle">Au piment d'EspeletteAu piment d'Espelette</p>
+              <p class="menu_cards_card_container_description_submenu_price">25€</p>
+            </div>
           </div>
-          <!-- <i class="fas fa-check-circle"></i> -->
-        </label>
+          <div class="menu_cards_card_container_selected">
+            <span class="menu_cards_card_container_selected_icon"><i class="fas fa-check-circle"></i></span>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <input class="card__input" type="checkbox" name="pricing" id="card2" checked>
-        <label class="card__label" for="card2">
-          <p class="card__label__title">Oeuf au plat</p>
-          <div class="card__label__subContainer">
-            <p class="card__label__subContainer__subtitle">
-              Assaisonné à la truffe sur lit de caviar
-            </p>
-            <span class="card__label__subContainer__price">20€</span>
+      <div class="menu_cards_card">
+        <div class="menu_cards_card_container">
+          <div class="menu_cards_card_container_description">
+            <h3 class="menu_cards_card_container_description_title">Fricassée escargot</h3>
+            <div class="menu_cards_card_container_description_submenu">
+              <p class="menu_cards_card_container_description_submenu_subtitle">Au piment d'EspeletteAu piment d'Espelette</p>
+              <p class="menu_cards_card_container_description_submenu_price">25€</p>
+            </div>
           </div>
-        </label>
+          <div class="menu_cards_card_container_selected">
+            <span class="menu_cards_card_container_selected_icon"><i class="fas fa-check-circle"></i></span>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <input class="card__input" type="checkbox" name="pricing" id="card3">
-        <label class="card__label" for="card3">
-          <p class="card__label__title">Foie gras de canard mi-cuit</p>
-          <div class="card__label__subContainer">
-            <p class="card__label__subContainer__subtitle">
-              Et ses copeaux de truffe noire
-            </p>
-            <span class="card__label__subContainer__price">35€</span>
+      <div class="menu_cards_card">
+        <div class="menu_cards_card_container">
+          <div class="menu_cards_card_container_description">
+            <h3 class="menu_cards_card_container_description_title">Fricassée escargot</h3>
+            <div class="menu_cards_card_container_description_submenu">
+              <p class="menu_cards_card_container_description_submenu_subtitle">Au piment d'EspeletteAu piment d'Espelette</p>
+              <p class="menu_cards_card_container_description_submenu_price">25€</p>
+            </div>
           </div>
-        </label>
-      </div>
-    </div>
-    <h5 class="menu__subtitle">PLATS</h5>
-    <div class="menu__border"></div>
-    <div class="menu__seats">
-      <div class="card">
-        <input class="card__input" type="checkbox" name="pricing" id="card4">
-        <label class="card__label" for="card4">
-          <p class=card__label__title">Filet de boeuf aux herbes</p>
-          <div class="card__label__subContainer">
-            <p class="card__label__subContainer__subtitle">
-              Accompagné de sa ribambelle de légumes
-            </p>
-            <span class="card__label__subContainer__price">40€</span>
+          <div class="menu_cards_card_container_selected">
+            <span class="menu_cards_card_container_selected_icon"><i class="fas fa-check-circle"></i></span>
           </div>
-        </label>
-      </div>
-      <div class="card">
-        <input class="card__input" type="checkbox" name="pricing" id="card5">
-        <label class="card__label" for="card5">
-          <p class="card__label__title">Parmentier de queue de boeuf</p>
-          <div class="card__label__subContainer">
-            <p class="card__label__subContainer__subtitle">
-              À la truffe noire sur sa purée de panais
-            </p>
-            <span class="card__label__subContainer__price">35€</span>
-          </div>
-        </label>
-      </div>
-      <div class="card">
-        <input class="card__input" type="checkbox" name="pricing" id="card6">
-        <label class="card__label" for="card6">
-          <p class="card__label__title">Filet de turbot</p>
-          <div class="card__label__subContainer">
-            <p class="card__label__subContainer__subtitle">
-              Aux agrumes
-            </p>
-            <span class="card__label__subContainer__price">44€</span>
-          </div>
-        </label>
+        </div>
       </div>
     </div>
-    <h5 class="menu__subtitle">DESSERTS</h5>
-    <div class="menu__border"></div>
-    <div class="menu__seats">
-      <div class="card">
-        <input class="card__input" type="checkbox" name="pricing" id="card7">
-        <label class="card__label" for="card7">
-          <p class="card__label__title">Paris-Brest</p>
-          <div class="card__label__subContainer">
-            <p class="card__label__subContainer__subtitle">
-              Revisité
-            </p>
-            <span class="card__label__subContainer__price">18€</span>
-          </div>
-        </label>
-      </div>
-      <div class="card">
-        <input class="card__input" type="checkbox" name="pricing" id="card8">
-        <label class="card__label" for="card8">
-          <p class="card__label__title">Macaron au chocolat d'exception</p>
-          <div class="card__label__subContainer">
-            <p class="card__label__subContainer__subtitle">
-              Et glace à la vanille de Madagascar
-            </p>
-            <span class="card__label__subContainer__price">22€</span>
-          </div>
-        </label>
-      </div>
-      <div class="card">
-        <input class="card__input" type="checkbox" name="pricing" id="card9">
-        <label class="card__label" for="card9">
-          <p class="card__label__title">Mousse au chocolat</p>
-          <div class="card__label__subContainer">
-            <p class="card__label__subContainer__subtitle">
-              Au piment d'Espelette et à la truffe noire
-            </p>
-            <span class="card__label__subContainer__price">23€</span>
-          </div>
-        </label>
-      </div>
-    </div>
-    <button class="btn" type="button" value="restaurants">Commander</button>
+    <!--    <h5 class="menu__subtitle">PLATS</h5>-->
+    <!--    <div class="menu__border"></div>-->
+    <!--    <div class="menu__meals">-->
+    <!--      <div class="card">-->
+    <!--        <input class="card__input" type="checkbox" name="pricing" id="card4">-->
+    <!--        <label class="card__label" for="card4">-->
+    <!--          <p class=card__label__title">Filet de boeuf aux herbes</p>-->
+    <!--          <div class="card__label__subContainer">-->
+    <!--            <p class="card__label__subContainer__subtitle">-->
+    <!--              Accompagné de sa ribambelle de légumes-->
+    <!--            </p>-->
+    <!--            <span class="card__label__subContainer__price">40€</span>-->
+    <!--          </div>-->
+    <!--        </label>-->
+    <!--      </div>-->
+    <!--      <div class="card">-->
+    <!--        <input class="card__input" type="checkbox" name="pricing" id="card5">-->
+    <!--        <label class="card__label" for="card5">-->
+    <!--          <p class="card__label__title">Parmentier de queue de boeuf</p>-->
+    <!--          <div class="card__label__subContainer">-->
+    <!--            <p class="card__label__subContainer__subtitle">-->
+    <!--              À la truffe noire sur sa purée de panais-->
+    <!--            </p>-->
+    <!--            <span class="card__label__subContainer__price">35€</span>-->
+    <!--          </div>-->
+    <!--        </label>-->
+    <!--      </div>-->
+    <!--      <div class="card">-->
+    <!--        <input class="card__input" type="checkbox" name="pricing" id="card6">-->
+    <!--        <label class="card__label" for="card6">-->
+    <!--          <p class="card__label__title">Filet de turbot</p>-->
+    <!--          <div class="card__label__subContainer">-->
+    <!--            <p class="card__label__subContainer__subtitle">-->
+    <!--              Aux agrumes-->
+    <!--            </p>-->
+    <!--            <span class="card__label__subContainer__price">44€</span>-->
+    <!--          </div>-->
+    <!--        </label>-->
+    <!--      </div>-->
+    <!--    </div>-->
+    <!--    <h5 class="menu__subtitle">DESSERTS</h5>-->
+    <!--    <div class="menu__border"></div>-->
+    <!--    <div class="menu__meals">-->
+    <!--      <div class="card">-->
+    <!--        <input class="card__input" type="checkbox" name="pricing" id="card7">-->
+    <!--        <label class="card__label" for="card7">-->
+    <!--          <p class="card__label__title">Paris-Brest</p>-->
+    <!--          <div class="card__label__subContainer">-->
+    <!--            <p class="card__label__subContainer__subtitle">-->
+    <!--              Revisité-->
+    <!--            </p>-->
+    <!--            <span class="card__label__subContainer__price">18€</span>-->
+    <!--          </div>-->
+    <!--        </label>-->
+    <!--      </div>-->
+    <!--      <div class="card">-->
+    <!--        <input class="card__input" type="checkbox" name="pricing" id="card8">-->
+    <!--        <label class="card__label" for="card8">-->
+    <!--          <p class="card__label__title">Macaron au chocolat d'exception</p>-->
+    <!--          <div class="card__label__subContainer">-->
+    <!--            <p class="card__label__subContainer__subtitle">-->
+    <!--              Et glace à la vanille de Madagascar-->
+    <!--            </p>-->
+    <!--            <span class="card__label__subContainer__price">22€</span>-->
+    <!--          </div>-->
+    <!--        </label>-->
+    <!--      </div>-->
+    <!--      <div class="card">-->
+    <!--        <input class="card__input" type="checkbox" name="pricing" id="card9">-->
+    <!--        <label class="card__label" for="card9">-->
+    <!--          <p class="card__label__title">Mousse au chocolat</p>-->
+    <!--          <div class="card__label__subContainer">-->
+    <!--            <p class="card__label__subContainer__subtitle">-->
+    <!--              Au piment d'Espelette et à la truffe noire-->
+    <!--            </p>-->
+    <!--            <span class="card__label__subContainer__price">23€</span>-->
+    <!--          </div>-->
+    <!--        </label>-->
+    <!--      </div>-->
+    <!--    </div>-->
+    <button class="buttons" type="button" value="restaurants">Commander</button>
   </section>
 </main>
 

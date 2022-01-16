@@ -10,17 +10,25 @@ body {
   line-height: 1.1;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
   font-weight: 900;
+  font-family: $fontRoboto;
+}
+
+h4 {
+  font-weight: 700;
+  font-family: $fontRoboto;
 }
 
 button {
-  font-weight: 600;
   font-size: 18px;
+  font-weight: 500;
+  font-family: $fontRoboto
 }
 
 p {
-  font-size: 18px;
+  font-size: 14px;
+  font-family: $fontRoboto
 }
 
 i {

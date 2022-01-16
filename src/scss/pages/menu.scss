@@ -1,50 +1,84 @@
 @import "../utils/variables";
 @import "../utils/mixins";
 
-.imageRestaurant {
-  width: 100%;
-  object-fit: cover;
-  height: 273px;
-  margin-bottom: -20px;
-  @media (min-width: map-get($breakpoints, tablet)) {
-    height: 390px;
-  }
-  @media (min-width: map-get($breakpoints, laptop)) {
-    height: 450px;
-  }
-}
-
 .menu {
-  border-top-left-radius: 50px 50px;
-  border-top-right-radius: 50px 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 30px;
   background-color: lighten($colorBlack, 98%);
-  position: relative;
-  margin-top: -30px;
-  &__title {
-    @include flexRow;
-    align-content: center;
-    justify-content: space-around;
-    padding: 20px 0;
-    margin: 20px 0;
-  }
-  &__subtitle {
+  &_title {
     font-weight: 500;
     font-size: 18px;
-    margin-left: 30px;
+    margin-left: 10px;
   }
-  &__border {
+  &_underline {
     background-color: $colorTertiary;
-    margin: 6px 30px;
+    margin: 7px 0 0 10px;
     width: 50px;
     height: 3px;
   }
-  &__seats {
+  &_cards {
     @include flexColumn;
+    align-items: center;
+    &_card {
+      cursor: pointer;
+      @include boxShadow;
+      border-radius: 17px;
+      margin: 10px;
+      width: 350px;
+      background-color: $colorWhite;
+      &_container {
+        @include flexRow;
+        &_description {
+          padding: 15px;
+          width: 100%;
+          min-width: 0;
+          &_title {
+            margin-bottom: 6px;
+          }
+          &_submenu {
+            @include flexRow;
+            justify-content: space-between;
+            &_subtitle {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+            &_price {
+              font-weight: 700;
+            }
+          }
+        }
+        &_selected {
+          width: 0;
+          transition: all 0.5s;
+          &_icon {
+            height: 100%;
+            display: block;
+            overflow: hidden;
+            position: relative;
+            color: $colorWhite;
+            border-radius: 0 17px 17px 0;
+            background-color: $colorTertiary;
+            i {
+              transform: translate(0px, -15px) rotate(-0.5turn);
+              position: absolute;
+              top: 37px;
+              left: 37px;
+            }
+          }
+        }
+        &:hover &_selected {
+          width: 100px;
+          transform: scaleX(1);
+          i {
+            transform: translate(-15px, -15px) rotate(1turn);
+            font-size: 31px;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
     @media (min-width: map-get($breakpoints, tablet)) {
-      flex-direction: row;
+      @include flexRow;
       flex-wrap: wrap;
       justify-content: space-around;
     }

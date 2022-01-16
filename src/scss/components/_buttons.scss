@@ -1,6 +1,6 @@
 @import "../utils/mixins";
 
-.btn {
+.buttons {
   @include boxShadow($color: lighten($colorBlack, 80%));
   cursor: pointer;
   border: none;

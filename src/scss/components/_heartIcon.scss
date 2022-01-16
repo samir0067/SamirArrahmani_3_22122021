@@ -3,10 +3,10 @@
 .heartIcon {
   margin: 4px 0;
   font-size: 18px;
-  -webkit-text-stroke: 1px $colorBlack;
-  transition: 1s;
   cursor: pointer;
+  transition: 1s;
   color: $colorWhite;
+  -webkit-text-stroke: 1px $colorBlack;
   &:hover {
     color: transparent;
     background-clip: border-box;

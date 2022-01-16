@@ -30,7 +30,7 @@ button {
   font-size: 1.1rem;
 }
 
-.btn {
+.buttons {
   border: 0.1rem solid #9356DC;
   background: -o-linear-gradient(320deg, #FF79DA 0%, #9356DC 100%);
   background: linear-gradient(130deg, #FF79DA 0%, #9356DC 100%);
@@ -38,7 +38,7 @@ button {
   padding: 0.75rem;
   cursor: pointer;
 }
-.btn:hover {
+.buttons:hover {
   background: #8641d8;
 }
 .btn--full-width {
