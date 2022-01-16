@@ -102,6 +102,7 @@ i {
   cursor: pointer;
   border: none;
   border-radius: 100px;
+  min-width: 240px;
   color: #ffffff;
   background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
   padding: 21px 24px;
