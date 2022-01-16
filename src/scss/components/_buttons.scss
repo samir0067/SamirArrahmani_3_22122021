@@ -1,0 +1,19 @@
+@import "../utils/mixins";
+
+.buttons {
+  @include boxShadow($color: lighten($colorBlack, 80%));
+  cursor: pointer;
+  border: none;
+  border-radius: 100px;
+  min-width: 240px;
+  color: $colorWhite;
+  background: $colorButtons;
+  padding: 21px 24px;
+  margin: 35px auto;
+  &:hover {
+    background: darken($colorPrimary, 5%);
+  }
+  &:focus {
+    background: lighten($colorSecondary, 5%);
+  }
+}

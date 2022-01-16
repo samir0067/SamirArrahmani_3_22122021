@@ -1,0 +1,36 @@
+@import "../utils/variables";
+
+* {
+  font-family: $fontRoboto;
+}
+
+body {
+  color: $colorBlack;
+  font-size: 17px;
+  line-height: 1.1;
+}
+
+h1, h2, h3 {
+  font-weight: 900;
+  font-family: $fontRoboto;
+}
+
+h4 {
+  font-weight: 700;
+  font-family: $fontRoboto;
+}
+
+button {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: $fontRoboto
+}
+
+p {
+  font-size: 14px;
+  font-family: $fontRoboto
+}
+
+i {
+  font-size: 23px;
+}

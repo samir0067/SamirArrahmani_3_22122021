@@ -1,0 +1,149 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.titleContainer {
+  padding: 20px;
+  display: flex;
+  width: inherit;
+  align-items: center;
+  flex-direction: column;
+  background-color: lighten($colorBlack, 96.5%);
+  &__title {
+    text-align: center;
+    margin: 20px 0;
+  }
+  &__subtitle {
+    text-align: center;
+  }
+}
+
+.sectionFunctioning {
+  padding: 55px 20px 55px 32px;
+  h1 {
+    margin-left: -15px;
+  }
+}
+
+.functioning {
+  width: 100%;
+  @include flexColumn;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 4s;
+  @media (min-width: map-get($breakpoints, tablet)) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  &__number {
+    text-align: center;
+    background-color: $colorPrimary;
+    color: $colorWhite;
+    border-radius: 50%;
+    padding: 5px;
+    width: 27px;
+    height: 27px;
+    position: relative;
+    right: 14px;
+    top: 49px;
+    animation: fadeIn 7s;
+    @media (min-width: map-get($breakpoints, tablet)) {
+      left: 15px;
+    }
+  }
+  &__btn {
+    @include boxShadow;
+    @include flexRow;
+    cursor: pointer;
+    border: none;
+    border-radius: 22px;
+    width: 305px;
+    background-color: lighten($colorBlack, 98%);
+    text-align: start;
+    padding: 22px;
+    @media (min-width: map-get($breakpoints, tablet)) {
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+    @media (max-width: map-get($breakpoints, mobile)) {
+      width: 280px;
+    }
+    &:hover {
+      background-color: lighten($colorPrimary, 35%);
+      .functioning__btn__icon {
+        &:before {
+          color: $colorPrimary;
+        }
+      }
+    }
+    &__icon {
+      width: 25px;
+      margin-right: 20px;
+      color: lighten($colorBlack, 62%);
+    }
+  }
+}
+
+.sectionRestaurants {
+  background-color: lighten($colorBlack, 96.5%);
+  padding: 50px 20px;
+  h1 {
+    margin-bottom: 23px;
+  }
+}
+
+.restaurants {
+  @include flexRow;
+  flex-wrap: wrap;
+  justify-content: center;
+  &__card {
+    animation: fadeIn 3s;
+    width: 100%;
+    max-width: 344px;
+    height: 230px;
+    margin-bottom: 18px;
+    border-radius: 17px;
+    background-color: $colorWhite;
+    @include boxShadow;
+    @media (min-width: map-get($breakpoints, tablet)) {
+      width: 390px;
+      margin: 10px;
+    }
+    &__img {
+      width: 100%;
+      border-radius: 17px 17px 0 0;
+      object-fit: cover;
+      height: 160px;
+    }
+    &__description {
+      @include flexRow;
+      justify-content: space-between;
+      padding: 6px 20px 0 10px;
+      &__btn {
+        width: 85px;
+        height: 30px;
+        border: none;
+        font-size: 16px;
+        background-color: $colorTertiary;
+        color: darken($colorTertiary, 37%);
+        position: relative;
+        left: 20%;
+        bottom: 160px;
+        @media (max-width: map-get($breakpoints, mobile)) {
+          left: 22%;
+        }
+      }
+      &__info {
+        line-height: 1.5;
+        @media (max-width: map-get($breakpoints, mobile)) {
+          font-size: 14px;
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+

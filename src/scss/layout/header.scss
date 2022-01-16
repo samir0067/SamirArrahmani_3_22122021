@@ -1,0 +1,59 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @media (min-width: map-get($breakpoints, tablet)) {
+    justify-content: space-around;
+  }
+  &__iconContainer {
+    font-size: 18px;
+    position: absolute;
+    left: 20px;
+    top: 22px;
+  }
+  &__container {
+    width: 100%;
+    text-align: center;
+    @media (min-width: map-get($breakpoints, tablet)) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    &__logoContainer {
+      background-color: $colorWhite;
+      position: relative;
+      @include headerShadow;
+      @media (min-width: map-get($breakpoints, tablet)) {
+        box-shadow: none;
+      }
+      &__logo {
+        width: 190px;
+        margin: 18px auto 8px auto;
+      }
+    }
+    &__locationContainer {
+      background-color: lighten($colorBlack, 85%);
+      @media (min-width: map-get($breakpoints, tablet)) {
+        background-color: $colorWhite;
+      }
+      &__location {
+        font-weight: 600;
+        padding: 18px 0;
+        @media (min-width: map-get($breakpoints, tablet)) {
+          background-color: $colorWhite;
+          box-shadow: none;
+          margin: auto;
+        }
+        & i {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}
+
+

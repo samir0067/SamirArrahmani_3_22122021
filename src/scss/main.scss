@@ -1,0 +1,17 @@
+@import "utils/functions";
+@import "utils/mixins";
+@import "utils/variables";
+
+@import "base/base";
+@import "base/typography";
+
+@import "components/buttons";
+@import "components/heartIcon";
+@import "components/imageMenu.scss";
+@import "components/titleMenu.scss";
+
+@import "layout/header";
+@import "layout/footer";
+
+@import "pages/index";
+@import "pages/menu";

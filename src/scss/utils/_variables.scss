@@ -1,0 +1,20 @@
+$colorPrimary: #9356DC;
+$colorSecondary: #FF79DA;
+$colorTertiary: #99E2D0;
+$colorBlack: #000000;
+$colorWhite: #ffffff;
+$colorButtons: linear-gradient(to bottom, $colorSecondary 0%, $colorPrimary 100%);
+
+$breakpoints: (mobile: 375px, tablet: 768px, laptop: 1024px, desktop: 1440px);
+
+$fontRoboto: 'Roboto', sans-serif;
+$fontShrikhand: 'Shrikhand', cursive;
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
