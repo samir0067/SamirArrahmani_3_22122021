@@ -24,12 +24,17 @@
   }
 }
 
+.mainOpacity {
+  animation: fadeOpacity 7s ease-in;
+
+}
+
 .functioning {
   width: 100%;
   @include flexColumn;
   align-items: center;
   justify-content: center;
-  animation: fadeIn 4s;
+  animation: fadeOpacityTranslate 4s;
   @media (min-width: map-get($breakpoints, tablet)) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -46,7 +51,6 @@
     position: relative;
     right: 14px;
     top: 49px;
-    animation: fadeIn 7s;
     @media (min-width: map-get($breakpoints, tablet)) {
       left: 15px;
     }
@@ -97,7 +101,7 @@
   flex-wrap: wrap;
   justify-content: center;
   &__card {
-    animation: fadeIn 3s;
+    animation: fadeOpacityTranslate 3s;
     width: 100%;
     max-width: 344px;
     height: 230px;

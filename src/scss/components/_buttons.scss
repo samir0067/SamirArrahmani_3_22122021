@@ -12,8 +12,6 @@
   margin: 35px auto;
   &:hover {
     background: $colorHoverButtons;
-  }
-  &:focus {
-    background: $colorFocusButtons;
+    @include boxShadow($color: lighten($colorBlack, 70%));
   }
 }
