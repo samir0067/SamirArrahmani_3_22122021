@@ -920,6 +920,18 @@ i {
     opacity: 0;
   }
 }
+.loadingFirst {
+  animation: fadeOpacityTranslate 4s;
+}
+
+.loadingSecond {
+  animation: fadeOpacityTranslate 8s;
+}
+
+.loadingThird {
+  animation: fadeOpacityTranslate 12s;
+}
+
 .menu {
   padding: 30px;
   background-color: #fafafa;
@@ -936,7 +948,6 @@ i {
   height: 3px;
 }
 .menu_cards {
-  animation: fadeOpacityTranslate 4s;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -1,6 +1,18 @@
 @import "../utils/variables";
 @import "../utils/mixins";
 
+.loadingFirst {
+  animation: fadeOpacityTranslate 4s;
+}
+
+.loadingSecond {
+  animation: fadeOpacityTranslate 8s;
+}
+
+.loadingThird {
+  animation: fadeOpacityTranslate 12s;
+}
+
 .menu {
   padding: 30px;
   background-color: lighten($colorBlack, 98%);
@@ -16,7 +28,6 @@
     height: 3px;
   }
   &_cards {
-    animation: fadeOpacityTranslate 4s;
     @include flexColumn;
     align-items: center;
     &_card {
