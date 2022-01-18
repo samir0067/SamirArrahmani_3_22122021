@@ -4,6 +4,8 @@ $colorTertiary: #99E2D0;
 $colorBlack: #000000;
 $colorWhite: #ffffff;
 $colorButtons: linear-gradient(to bottom, $colorSecondary 0%, $colorPrimary 100%);
+$colorFocusButtons: linear-gradient(to bottom, darken($colorSecondary, 10%) 0%, darken($colorPrimary, 10%) 100%);
+$colorHoverButtons: linear-gradient(to bottom, lighten($colorSecondary, 10%) 0%, lighten($colorPrimary, 10%) 100%);
 
 $breakpoints: (mobile: 375px, tablet: 768px, laptop: 1024px, desktop: 1440px);
 

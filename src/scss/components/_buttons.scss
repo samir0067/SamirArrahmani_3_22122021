@@ -11,9 +11,9 @@
   padding: 21px 24px;
   margin: 35px auto;
   &:hover {
-    background: darken($colorPrimary, 5%);
+    background: $colorHoverButtons;
   }
   &:focus {
-    background: lighten($colorSecondary, 5%);
+    background: $colorFocusButtons;
   }
 }

@@ -109,10 +109,10 @@ i {
   margin: 35px auto;
 }
 .buttons:hover {
-  background: #8641d8;
+  background: linear-gradient(to bottom, #fface8 0%, #ae80e5 100%);
 }
 .buttons:focus {
-  background: #ff93e1;
+  background: linear-gradient(to bottom, #ff46cc 0%, #782cd3 100%);
 }
 
 @keyframes fadeIn {
@@ -130,6 +130,7 @@ i {
   transition: 1s;
   color: #ffffff;
   -webkit-text-stroke: 1px #000000;
+  transform: translate(0px, 0px) rotate(0turn);
 }
 .heartIcon:hover {
   color: transparent;
@@ -137,6 +138,7 @@ i {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-stroke: 0 #ffffff;
+  transform: translate(0px, 10px) rotate(0turn);
 }
 
 @keyframes fadeIn {
@@ -532,6 +534,7 @@ i {
   height: 3px;
 }
 .menu_cards {
+  animation: fadeIn 4s;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -16,6 +16,7 @@
     height: 3px;
   }
   &_cards {
+    animation: fadeIn 4s;
     @include flexColumn;
     align-items: center;
     &_card {
