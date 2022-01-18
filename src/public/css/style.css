@@ -1,25 +1,31 @@
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translate(0px, 15px) rotate(0turn);
   }
   to {
     opacity: 1;
+    transform: translate(0px, 0px) rotate(0turn);
   }
 }
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translate(0px, 15px) rotate(0turn);
   }
   to {
     opacity: 1;
+    transform: translate(0px, 0px) rotate(0turn);
   }
 }
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translate(0px, 15px) rotate(0turn);
   }
   to {
     opacity: 1;
+    transform: translate(0px, 0px) rotate(0turn);
   }
 }
 *,
@@ -49,9 +55,11 @@ a {
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translate(0px, 15px) rotate(0turn);
   }
   to {
     opacity: 1;
+    transform: translate(0px, 0px) rotate(0turn);
   }
 }
 * {
@@ -92,9 +100,11 @@ i {
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translate(0px, 15px) rotate(0turn);
   }
   to {
     opacity: 1;
+    transform: translate(0px, 0px) rotate(0turn);
   }
 }
 .buttons {
@@ -118,9 +128,11 @@ i {
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translate(0px, 15px) rotate(0turn);
   }
   to {
     opacity: 1;
+    transform: translate(0px, 0px) rotate(0turn);
   }
 }
 .heartIcon {
@@ -130,7 +142,6 @@ i {
   transition: 1s;
   color: #ffffff;
   -webkit-text-stroke: 1px #000000;
-  transform: translate(0px, 0px) rotate(0turn);
 }
 .heartIcon:hover {
   color: transparent;
@@ -138,23 +149,26 @@ i {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-stroke: 0 #ffffff;
-  transform: translate(0px, 10px) rotate(0turn);
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translate(0px, 15px) rotate(0turn);
   }
   to {
     opacity: 1;
+    transform: translate(0px, 0px) rotate(0turn);
   }
 }
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translate(0px, 15px) rotate(0turn);
   }
   to {
     opacity: 1;
+    transform: translate(0px, 0px) rotate(0turn);
   }
 }
 .imageMenu {
@@ -176,17 +190,21 @@ i {
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translate(0px, 15px) rotate(0turn);
   }
   to {
     opacity: 1;
+    transform: translate(0px, 0px) rotate(0turn);
   }
 }
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translate(0px, 15px) rotate(0turn);
   }
   to {
     opacity: 1;
+    transform: translate(0px, 0px) rotate(0turn);
   }
 }
 .titleMenu {
@@ -206,17 +224,21 @@ i {
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translate(0px, 15px) rotate(0turn);
   }
   to {
     opacity: 1;
+    transform: translate(0px, 0px) rotate(0turn);
   }
 }
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translate(0px, 15px) rotate(0turn);
   }
   to {
     opacity: 1;
+    transform: translate(0px, 0px) rotate(0turn);
   }
 }
 .header {
@@ -287,17 +309,21 @@ i {
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translate(0px, 15px) rotate(0turn);
   }
   to {
     opacity: 1;
+    transform: translate(0px, 0px) rotate(0turn);
   }
 }
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translate(0px, 15px) rotate(0turn);
   }
   to {
     opacity: 1;
+    transform: translate(0px, 0px) rotate(0turn);
   }
 }
 .footer {
@@ -328,17 +354,21 @@ i {
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translate(0px, 15px) rotate(0turn);
   }
   to {
     opacity: 1;
+    transform: translate(0px, 0px) rotate(0turn);
   }
 }
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translate(0px, 15px) rotate(0turn);
   }
   to {
     opacity: 1;
+    transform: translate(0px, 0px) rotate(0turn);
   }
 }
 .titleContainer {
@@ -505,17 +535,21 @@ i {
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translate(0px, 15px) rotate(0turn);
   }
   to {
     opacity: 1;
+    transform: translate(0px, 0px) rotate(0turn);
   }
 }
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translate(0px, 15px) rotate(0turn);
   }
   to {
     opacity: 1;
+    transform: translate(0px, 0px) rotate(0turn);
   }
 }
 .menu {
@@ -534,7 +568,7 @@ i {
   height: 3px;
 }
 .menu_cards {
-  animation: fadeIn 4s;
+  animation: fadeIn 3s;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -7,13 +7,13 @@
   transition: 1s;
   color: $colorWhite;
   -webkit-text-stroke: 1px $colorBlack;
-  transform: translate(0px, 0px) rotate(0turn);
+
   &:hover {
     color: transparent;
     background-clip: border-box;
     background: linear-gradient(to bottom right, $colorSecondary, $colorPrimary);
     -webkit-background-clip: text;
     -webkit-text-stroke: 0 $colorWhite;
-    transform: translate(0px, 10px) rotate(0turn);
+
   }
 }
