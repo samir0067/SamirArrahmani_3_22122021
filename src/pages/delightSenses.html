@@ -17,11 +17,11 @@
 <body>
 <!-- Header -->
 <header class="header">
-  <div class="header__iconContainer">
+  <div class="header_iconContainer">
     <a href="../../index.html"><i class="fas fa-arrow-left"></i></a>
   </div>
-  <div class="header__logoContainer">
-    <img class="header__container__logoContainer__logo" src="../public/images/logo/ohmyfood.png" alt="Logo ohmyfood"/>
+  <div class="header_logoContainer">
+    <img class="header_container_logoContainer_logo" src="../public/images/logo/ohmyfood.png" alt="Logo ohmyfood"/>
   </div>
 </header>
 
@@ -33,14 +33,17 @@
   <!-- title restaurant -->
   <section class="titleMenu">
     <h1>Le délice des sens</h1>
-    <div class="heartIcon"><i class="fas fa-heart"></i></div>
+    <div class="heartContainer">
+      <div class="heartContainer_heartIcon"><i class="fas fa-heart overlay"></i></div>
+      <div class="heartContainer_heartIcon"><i class="fas fa-heart lower"></i></div>
+    </div>
   </section>
 
   <section class="menu">
     <!-- Entrées restaurant -->
     <h5 class="menu_title">ENTRÉES</h5>
     <div class="menu_underline"></div>
-    <div class="menu_cards loadingFirst">
+    <div class="menu_cards firstLoading">
       <div class="menu_cards_card">
         <div class="menu_cards_card_container">
           <div class="menu_cards_card_container_description">
@@ -87,7 +90,7 @@
     <!-- Plats restaurant -->
     <h5 class="menu_title">PLATS</h5>
     <div class="menu_underline"></div>
-    <div class="menu_cards loadingSecond">
+    <div class="menu_cards secondLoading">
       <div class="menu_cards_card">
         <div class="menu_cards_card_container">
           <div class="menu_cards_card_container_description">
@@ -134,7 +137,7 @@
     <!-- Plats restaurant -->
     <h5 class="menu_title">DESSERTS</h5>
     <div class="menu_underline"></div>
-    <div class="menu_cards loadingThird">
+    <div class="menu_cards thirdLoading">
       <div class="menu_cards_card">
         <div class="menu_cards_card_container">
           <div class="menu_cards_card_container_description">
@@ -186,8 +189,8 @@
 
 <!-- Footer -->
 <footer class="footer">
-  <img alt="Logo ohmyfood" class="footer__logo" src="../public/images/logo/ohmyfood-white.png"/>
-  <ul class="footer__ul">
+  <img alt="Logo ohmyfood" class="footer_logo" src="../public/images/logo/ohmyfood-white.png"/>
+  <ul class="footer_ul">
     <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
     <li><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
     <li><a href="#">Mentions légales</a></li>

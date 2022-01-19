@@ -9,13 +9,13 @@
   @media (min-width: map-get($breakpoints, tablet)) {
     justify-content: space-around;
   }
-  &__iconContainer {
+  &_iconContainer {
     font-size: 18px;
     position: absolute;
     left: 20px;
     top: 22px;
   }
-  &__container {
+  &_container {
     width: 100%;
     text-align: center;
     @media (min-width: map-get($breakpoints, tablet)) {
@@ -23,24 +23,24 @@
       flex-direction: row;
       justify-content: space-around;
     }
-    &__logoContainer {
+    &_logoContainer {
       background-color: $colorWhite;
       position: relative;
       @include headerShadow;
       @media (min-width: map-get($breakpoints, tablet)) {
         box-shadow: none;
       }
-      &__logo {
+      &_logo {
         width: 190px;
         margin: 18px auto 8px auto;
       }
     }
-    &__locationContainer {
+    &_locationContainer {
       background-color: lighten($colorBlack, 85%);
       @media (min-width: map-get($breakpoints, tablet)) {
         background-color: $colorWhite;
       }
-      &__location {
+      &_location {
         font-weight: 600;
         padding: 18px 0;
         @media (min-width: map-get($breakpoints, tablet)) {

@@ -1,15 +1,15 @@
 @import "../utils/variables";
 @import "../utils/mixins";
 
-.loadingFirst {
+.firstLoading {
   animation: fadeOpacityTranslate 4s;
 }
 
-.loadingSecond {
+.secondLoading {
   animation: fadeOpacityTranslate 8s;
 }
 
-.loadingThird {
+.thirdLoading {
   animation: fadeOpacityTranslate 12s;
 }
 
@@ -46,14 +46,12 @@
           &_title {
             margin-bottom: 6px;
             @include overflowing;
-            white-space: nowrap;
           }
           &_submenu {
             @include flexRow;
             justify-content: space-between;
             &_subtitle {
               @include overflowing;
-              white-space: nowrap;
             }
             &_price {
               font-weight: 700;

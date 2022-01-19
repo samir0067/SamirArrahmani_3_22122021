@@ -1,19 +1,37 @@
 @import "../utils/mixins";
 
-.heartIcon {
-  margin: 4px 0;
-  font-size: 18px;
-  cursor: pointer;
-  transition: 1s;
-  color: $colorWhite;
-  -webkit-text-stroke: 1px $colorBlack;
-
-  &:hover {
-    color: transparent;
-    background-clip: border-box;
-    background: linear-gradient(to bottom right, $colorSecondary, $colorPrimary);
-    -webkit-background-clip: text;
-    -webkit-text-stroke: 0 $colorWhite;
-
+.heartContainer {
+  &_heartIcon {
+    overflow: hidden;
   }
+}
+
+.fa-heart {
+  padding: 2px;
+  cursor: pointer;
+}
+
+.lower {
+  z-index: 10;
+  position: absolute;
+  color: $colorPrimary;
+  transform: translateY(-29px);
+}
+
+.overlay {
+  z-index: 20;
+  color: $colorWhite;
+  position: relative;
+  transform: translateY(0px);
+  background-color: lighten($colorBlack, 98%);
+  -webkit-text-stroke: 0.5px $colorBlack;
+  &:hover {
+    transition: 1.5s;
+    transform: translateY(-30px);
+    -webkit-text-stroke: 0 $colorBlack;
+  }
+}
+
+.backgroundWhite {
+  background-color: $colorWhite;
 }

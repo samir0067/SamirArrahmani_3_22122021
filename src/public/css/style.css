@@ -16,7 +16,7 @@
     transform: translate(0px, 0px) rotate(0turn);
   }
 }
-@keyframes translate {
+@keyframes fadeRotation {
   from {
     transform: rotate(0turn);
     opacity: 1;
@@ -44,7 +44,7 @@
     transform: translate(0px, 0px) rotate(0turn);
   }
 }
-@keyframes translate {
+@keyframes fadeRotation {
   from {
     transform: rotate(0turn);
     opacity: 1;
@@ -72,7 +72,7 @@
     transform: translate(0px, 0px) rotate(0turn);
   }
 }
-@keyframes translate {
+@keyframes fadeRotation {
   from {
     transform: rotate(0turn);
     opacity: 1;
@@ -124,7 +124,7 @@ a {
     transform: translate(0px, 0px) rotate(0turn);
   }
 }
-@keyframes translate {
+@keyframes fadeRotation {
   from {
     transform: rotate(0turn);
     opacity: 1;
@@ -187,7 +187,7 @@ i {
     transform: translate(0px, 0px) rotate(0turn);
   }
 }
-@keyframes translate {
+@keyframes fadeRotation {
   from {
     transform: rotate(0turn);
     opacity: 1;
@@ -231,7 +231,7 @@ i {
     transform: translate(0px, 0px) rotate(0turn);
   }
 }
-@keyframes translate {
+@keyframes fadeRotation {
   from {
     transform: rotate(0turn);
     opacity: 1;
@@ -241,20 +241,38 @@ i {
     opacity: 0;
   }
 }
-.heartIcon {
-  margin: 4px 0;
-  font-size: 18px;
-  cursor: pointer;
-  transition: 1s;
-  color: #ffffff;
-  -webkit-text-stroke: 1px #000000;
+.heartContainer_heartIcon {
+  overflow: hidden;
 }
-.heartIcon:hover {
-  color: transparent;
-  background-clip: border-box;
-  background: linear-gradient(to bottom right, #8679ff, #9356DC);
-  -webkit-background-clip: text;
-  -webkit-text-stroke: 0 #ffffff;
+
+.fa-heart {
+  padding: 2px;
+  cursor: pointer;
+}
+
+.lower {
+  z-index: 10;
+  position: absolute;
+  color: #9356DC;
+  transform: translateY(-29px);
+}
+
+.overlay {
+  z-index: 20;
+  color: #ffffff;
+  position: relative;
+  transform: translateY(0px);
+  background-color: #fafafa;
+  -webkit-text-stroke: 0.5px #000000;
+}
+.overlay:hover {
+  transition: 1.5s;
+  transform: translateY(-30px);
+  -webkit-text-stroke: 0 #000000;
+}
+
+.backgroundWhite {
+  background-color: #ffffff;
 }
 
 @keyframes fadeOpacity {
@@ -275,7 +293,7 @@ i {
     transform: translate(0px, 0px) rotate(0turn);
   }
 }
-@keyframes translate {
+@keyframes fadeRotation {
   from {
     transform: rotate(0turn);
     opacity: 1;
@@ -303,7 +321,7 @@ i {
     transform: translate(0px, 0px) rotate(0turn);
   }
 }
-@keyframes translate {
+@keyframes fadeRotation {
   from {
     transform: rotate(0turn);
     opacity: 1;
@@ -347,7 +365,7 @@ i {
     transform: translate(0px, 0px) rotate(0turn);
   }
 }
-@keyframes translate {
+@keyframes fadeRotation {
   from {
     transform: rotate(0turn);
     opacity: 1;
@@ -369,7 +387,7 @@ i {
   border-right: 10px solid #9356DC;
   border-bottom: 10px solid rgba(0, 0, 0, 0);
   border-top: 10px solid rgba(0, 0, 0, 0);
-  animation: translate 4s;
+  animation: fadeRotation 4s;
 }
 
 @keyframes fadeOpacity {
@@ -390,7 +408,7 @@ i {
     transform: translate(0px, 0px) rotate(0turn);
   }
 }
-@keyframes translate {
+@keyframes fadeRotation {
   from {
     transform: rotate(0turn);
     opacity: 1;
@@ -418,7 +436,7 @@ i {
     transform: translate(0px, 0px) rotate(0turn);
   }
 }
-@keyframes translate {
+@keyframes fadeRotation {
   from {
     transform: rotate(0turn);
     opacity: 1;
@@ -460,7 +478,7 @@ i {
     transform: translate(0px, 0px) rotate(0turn);
   }
 }
-@keyframes translate {
+@keyframes fadeRotation {
   from {
     transform: rotate(0turn);
     opacity: 1;
@@ -488,7 +506,7 @@ i {
     transform: translate(0px, 0px) rotate(0turn);
   }
 }
-@keyframes translate {
+@keyframes fadeRotation {
   from {
     transform: rotate(0turn);
     opacity: 1;
@@ -509,57 +527,57 @@ i {
     justify-content: space-around;
   }
 }
-.header__iconContainer {
+.header_iconContainer {
   font-size: 18px;
   position: absolute;
   left: 20px;
   top: 22px;
 }
-.header__container {
+.header_container {
   width: 100%;
   text-align: center;
 }
 @media (min-width: 768px) {
-  .header__container {
+  .header_container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
 }
-.header__container__logoContainer {
+.header_container_logoContainer {
   background-color: #ffffff;
   position: relative;
   box-shadow: 0 0 8px #a6a6a6;
 }
 @media (min-width: 768px) {
-  .header__container__logoContainer {
+  .header_container_logoContainer {
     box-shadow: none;
   }
 }
-.header__container__logoContainer__logo {
+.header_container_logoContainer_logo {
   width: 190px;
   margin: 18px auto 8px auto;
 }
-.header__container__locationContainer {
+.header_container_locationContainer {
   background-color: #d9d9d9;
 }
 @media (min-width: 768px) {
-  .header__container__locationContainer {
+  .header_container_locationContainer {
     background-color: #ffffff;
   }
 }
-.header__container__locationContainer__location {
+.header_container_locationContainer_location {
   font-weight: 600;
   padding: 18px 0;
 }
 @media (min-width: 768px) {
-  .header__container__locationContainer__location {
+  .header_container_locationContainer_location {
     background-color: #ffffff;
     box-shadow: none;
     margin: auto;
   }
 }
-.header__container__locationContainer__location i {
+.header_container_locationContainer_location i {
   margin-right: 15px;
 }
 
@@ -581,7 +599,7 @@ i {
     transform: translate(0px, 0px) rotate(0turn);
   }
 }
-@keyframes translate {
+@keyframes fadeRotation {
   from {
     transform: rotate(0turn);
     opacity: 1;
@@ -609,7 +627,7 @@ i {
     transform: translate(0px, 0px) rotate(0turn);
   }
 }
-@keyframes translate {
+@keyframes fadeRotation {
   from {
     transform: rotate(0turn);
     opacity: 1;
@@ -628,17 +646,17 @@ i {
   background-color: #404040;
   padding-left: 20px;
 }
-.footer__logo {
+.footer_logo {
   width: 120px;
   margin: 25px 0;
 }
-.footer__ul li {
+.footer_ul li {
   margin-bottom: 7px;
 }
-.footer__ul li a {
+.footer_ul li a {
   color: #ffffff;
 }
-.footer__ul li a i {
+.footer_ul li a i {
   margin-right: 10px;
   font-size: 15px;
   width: 25px;
@@ -662,7 +680,7 @@ i {
     transform: translate(0px, 0px) rotate(0turn);
   }
 }
-@keyframes translate {
+@keyframes fadeRotation {
   from {
     transform: rotate(0turn);
     opacity: 1;
@@ -690,7 +708,7 @@ i {
     transform: translate(0px, 0px) rotate(0turn);
   }
 }
-@keyframes translate {
+@keyframes fadeRotation {
   from {
     transform: rotate(0turn);
     opacity: 1;
@@ -708,11 +726,11 @@ i {
   flex-direction: column;
   background-color: #f6f6f6;
 }
-.titleContainer__title {
+.titleContainer_title {
   text-align: center;
   margin: 20px 0;
 }
-.titleContainer__subtitle {
+.titleContainer_subtitle {
   text-align: center;
 }
 
@@ -742,7 +760,7 @@ i {
     justify-content: space-around;
   }
 }
-.functioning__number {
+.functioning_number {
   text-align: center;
   background-color: #9356DC;
   color: #ffffff;
@@ -755,11 +773,11 @@ i {
   top: 49px;
 }
 @media (min-width: 768px) {
-  .functioning__number {
+  .functioning_number {
     left: 15px;
   }
 }
-.functioning__btn {
+.functioning_btn {
   box-shadow: 3px 4px 9px 2px #e6e6e6;
   display: flex;
   flex-direction: row;
@@ -772,23 +790,23 @@ i {
   padding: 22px;
 }
 @media (min-width: 768px) {
-  .functioning__btn {
+  .functioning_btn {
     margin-right: 30px;
     margin-left: 30px;
   }
 }
 @media (max-width: 375px) {
-  .functioning__btn {
+  .functioning_btn {
     width: 280px;
   }
 }
-.functioning__btn:hover {
+.functioning_btn:hover {
   background-color: #f2eafb;
 }
-.functioning__btn:hover .functioning__btn__icon:before {
+.functioning_btn:hover .functioning_btn_icon:before {
   color: #9356DC;
 }
-.functioning__btn__icon {
+.functioning_btn_icon {
   width: 25px;
   margin-right: 20px;
   color: #9e9e9e;
@@ -808,7 +826,7 @@ i {
   flex-wrap: wrap;
   justify-content: center;
 }
-.restaurants__card {
+.restaurants_card {
   animation: fadeOpacityTranslate 3s;
   width: 100%;
   max-width: 344px;
@@ -819,24 +837,24 @@ i {
   box-shadow: 3px 4px 9px 2px #e6e6e6;
 }
 @media (min-width: 768px) {
-  .restaurants__card {
+  .restaurants_card {
     width: 390px;
     margin: 10px;
   }
 }
-.restaurants__card__img {
+.restaurants_card_img {
   width: 100%;
   border-radius: 17px 17px 0 0;
   object-fit: cover;
   height: 160px;
 }
-.restaurants__card__description {
+.restaurants_card_description {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 6px 20px 0 10px;
 }
-.restaurants__card__description__btn {
+.restaurants_card_description_btn {
   width: 85px;
   height: 30px;
   border: none;
@@ -848,18 +866,18 @@ i {
   bottom: 160px;
 }
 @media (max-width: 375px) {
-  .restaurants__card__description__btn {
+  .restaurants_card_description_btn {
     left: 22%;
   }
 }
-.restaurants__card__description__info {
+.restaurants_card_description_info {
   line-height: 1.5;
 }
 @media (max-width: 375px) {
-  .restaurants__card__description__info {
+  .restaurants_card_description_info {
     font-size: 14px;
   }
-  .restaurants__card__description__info p {
+  .restaurants_card_description_info p {
     font-size: 14px;
   }
 }
@@ -882,7 +900,7 @@ i {
     transform: translate(0px, 0px) rotate(0turn);
   }
 }
-@keyframes translate {
+@keyframes fadeRotation {
   from {
     transform: rotate(0turn);
     opacity: 1;
@@ -910,7 +928,7 @@ i {
     transform: translate(0px, 0px) rotate(0turn);
   }
 }
-@keyframes translate {
+@keyframes fadeRotation {
   from {
     transform: rotate(0turn);
     opacity: 1;
@@ -920,15 +938,15 @@ i {
     opacity: 0;
   }
 }
-.loadingFirst {
+.firstLoading {
   animation: fadeOpacityTranslate 4s;
 }
 
-.loadingSecond {
+.secondLoading {
   animation: fadeOpacityTranslate 8s;
 }
 
-.loadingThird {
+.thirdLoading {
   animation: fadeOpacityTranslate 12s;
 }
 

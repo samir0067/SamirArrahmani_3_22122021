@@ -8,11 +8,11 @@
   align-items: center;
   flex-direction: column;
   background-color: lighten($colorBlack, 96.5%);
-  &__title {
+  &_title {
     text-align: center;
     margin: 20px 0;
   }
-  &__subtitle {
+  &_subtitle {
     text-align: center;
   }
 }
@@ -40,7 +40,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  &__number {
+  &_number {
     text-align: center;
     background-color: $colorPrimary;
     color: $colorWhite;
@@ -55,7 +55,7 @@
       left: 15px;
     }
   }
-  &__btn {
+  &_btn {
     @include boxShadow;
     @include flexRow;
     cursor: pointer;
@@ -74,13 +74,13 @@
     }
     &:hover {
       background-color: lighten($colorPrimary, 35%);
-      .functioning__btn__icon {
+      .functioning_btn_icon {
         &:before {
           color: $colorPrimary;
         }
       }
     }
-    &__icon {
+    &_icon {
       width: 25px;
       margin-right: 20px;
       color: lighten($colorBlack, 62%);
@@ -100,7 +100,7 @@
   @include flexRow;
   flex-wrap: wrap;
   justify-content: center;
-  &__card {
+  &_card {
     animation: fadeOpacityTranslate 3s;
     width: 100%;
     max-width: 344px;
@@ -113,17 +113,17 @@
       width: 390px;
       margin: 10px;
     }
-    &__img {
+    &_img {
       width: 100%;
       border-radius: 17px 17px 0 0;
       object-fit: cover;
       height: 160px;
     }
-    &__description {
+    &_description {
       @include flexRow;
       justify-content: space-between;
       padding: 6px 20px 0 10px;
-      &__btn {
+      &_btn {
         width: 85px;
         height: 30px;
         border: none;
@@ -137,7 +137,7 @@
           left: 22%;
         }
       }
-      &__info {
+      &_info {
         line-height: 1.5;
         @media (max-width: map-get($breakpoints, mobile)) {
           font-size: 14px;
