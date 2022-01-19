@@ -14,7 +14,9 @@
 .lower {
   z-index: 10;
   position: absolute;
-  color: $colorPrimary;
+  color: transparent;
+  background: linear-gradient(to bottom, $colorSecondary 0%, $colorPrimary 50%);
+  -webkit-background-clip: text;
   transform: translateY(-29px);
 }
 
@@ -35,3 +37,20 @@
 .backgroundWhite {
   background-color: $colorWhite;
 }
+
+//.heartIcon {
+//  margin: 4px 0;
+//  font-size: 18px;
+//  cursor: pointer;
+//  transition: 1s;
+//  color: $colorWhite;
+//  -webkit-text-stroke: 1px $colorBlack;
+//  &:hover {
+//    color: transparent;
+//    background-clip: border-box;
+//    background: linear-gradient(to bottom right, $colorSecondary, $colorPrimary);
+//    -webkit-background-clip: text;
+//    -webkit-text-stroke: 0 $colorWhite;
+//
+//  }
+//}

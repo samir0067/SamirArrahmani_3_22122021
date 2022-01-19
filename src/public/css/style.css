@@ -253,7 +253,9 @@ i {
 .lower {
   z-index: 10;
   position: absolute;
-  color: #9356DC;
+  color: transparent;
+  background: linear-gradient(to bottom, #8679ff 0%, #9356DC 50%);
+  -webkit-background-clip: text;
   transform: translateY(-29px);
 }
 
