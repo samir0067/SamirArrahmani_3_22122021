@@ -87,6 +87,9 @@
           }
         }
       }
+      @media (max-width: map-get($breakpoints, mobile)) {
+        width: 300px;
+      }
     }
     @media (min-width: map-get($breakpoints, tablet)) {
       @include flexRow;

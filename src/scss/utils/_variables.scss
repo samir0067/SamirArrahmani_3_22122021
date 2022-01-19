@@ -6,7 +6,7 @@ $colorWhite: #ffffff;
 $colorButtons: linear-gradient(to bottom, $colorSecondary 0%, $colorPrimary 100%);
 $colorHoverButtons: linear-gradient(to bottom, lighten($colorSecondary, 10%) 0%, lighten($colorPrimary, 10%) 100%);
 
-$breakpoints: (mobile: 375px, tablet: 768px, laptop: 1024px, desktop: 1440px);
+$breakpoints: (mobile: 360px, tablet: 768px, laptop: 1024px, desktop: 1440px);
 
 $fontRoboto: 'Roboto', sans-serif;
 $fontShrikhand: 'Shrikhand', cursive;
