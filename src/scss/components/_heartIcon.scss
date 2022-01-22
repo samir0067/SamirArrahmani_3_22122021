@@ -14,8 +14,11 @@
 .lower {
   z-index: 10;
   position: absolute;
-  color: transparent;
-  background: linear-gradient(to bottom, $colorSecondary 0%, $colorPrimary 50%);
+  color: $colorPrimary;
+  // TODO not working with firefox
+  //color: transparent;
+  //background: linear-gradient($colorPrimary, $colorSecondary);
+  background-clip: border-box;
   -webkit-background-clip: text;
   transform: translateY(-29px);
 }

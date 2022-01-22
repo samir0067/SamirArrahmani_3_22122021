@@ -1,10 +1,10 @@
 $colorPrimary: #9356DC;
-$colorSecondary: #8679ff;
+$colorSecondary: #FF79DA;
 $colorTertiary: #99E2D0;
 $colorBlack: #000000;
 $colorWhite: #ffffff;
-$colorButtons: linear-gradient(to bottom, $colorSecondary 0%, $colorPrimary 100%);
-$colorHoverButtons: linear-gradient(to bottom, lighten($colorSecondary, 10%) 0%, lighten($colorPrimary, 10%) 100%);
+$colorButtons: linear-gradient($colorSecondary, $colorPrimary);
+$colorHoverButtons: linear-gradient(lighten($colorSecondary, 10%), lighten($colorPrimary, 10%));
 
 $breakpoints: (mobile: 360px, tablet: 768px, laptop: 1024px, desktop: 1440px);
 
