@@ -1,6 +1,32 @@
 @import "../utils/variables";
 @import "../utils/mixins";
 
+.imageMenu {
+  width: 100%;
+  object-fit: cover;
+  height: 273px;
+  @media (min-width: map-get($breakpoints, tablet)) {
+    height: 390px;
+  }
+  @media (min-width: map-get($breakpoints, laptop)) {
+    height: 450px;
+  }
+}
+
+.titleMenu {
+  @include flexRow;
+  justify-content: space-between;
+  position: relative;
+  margin-top: -55px;
+  padding: 40px 40px 10px 40px;
+  border-radius: 55px 55px 0 0;
+  background-color: lighten($colorBlack, 98%);
+  & h1 {
+    font-family: $fontShrikhand;
+  }
+}
+
+
 .firstLoading {
   animation: fadeOpacityTranslate 4s;
 }

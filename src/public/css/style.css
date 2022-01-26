@@ -306,78 +306,6 @@ i {
     opacity: 0;
   }
 }
-@keyframes fadeOpacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fadeOpacityTranslate {
-  from {
-    opacity: 0;
-    transform: translate(0px, 15px) rotate(0turn);
-  }
-  to {
-    opacity: 1;
-    transform: translate(0px, 0px) rotate(0turn);
-  }
-}
-@keyframes fadeRotation {
-  from {
-    transform: rotate(0turn);
-    opacity: 1;
-  }
-  to {
-    transform: rotate(1.5turn);
-    opacity: 0;
-  }
-}
-.imageMenu {
-  width: 100%;
-  object-fit: cover;
-  height: 273px;
-}
-@media (min-width: 768px) {
-  .imageMenu {
-    height: 390px;
-  }
-}
-@media (min-width: 1024px) {
-  .imageMenu {
-    height: 450px;
-  }
-}
-
-@keyframes fadeOpacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fadeOpacityTranslate {
-  from {
-    opacity: 0;
-    transform: translate(0px, 15px) rotate(0turn);
-  }
-  to {
-    opacity: 1;
-    transform: translate(0px, 0px) rotate(0turn);
-  }
-}
-@keyframes fadeRotation {
-  from {
-    transform: rotate(0turn);
-    opacity: 1;
-  }
-  to {
-    transform: rotate(1.5turn);
-    opacity: 0;
-  }
-}
 .loader {
   position: absolute;
   top: 40%;
@@ -391,76 +319,6 @@ i {
   border-bottom: 10px solid rgba(0, 0, 0, 0);
   border-top: 10px solid rgba(0, 0, 0, 0);
   animation: fadeRotation 4s;
-}
-
-@keyframes fadeOpacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fadeOpacityTranslate {
-  from {
-    opacity: 0;
-    transform: translate(0px, 15px) rotate(0turn);
-  }
-  to {
-    opacity: 1;
-    transform: translate(0px, 0px) rotate(0turn);
-  }
-}
-@keyframes fadeRotation {
-  from {
-    transform: rotate(0turn);
-    opacity: 1;
-  }
-  to {
-    transform: rotate(1.5turn);
-    opacity: 0;
-  }
-}
-@keyframes fadeOpacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fadeOpacityTranslate {
-  from {
-    opacity: 0;
-    transform: translate(0px, 15px) rotate(0turn);
-  }
-  to {
-    opacity: 1;
-    transform: translate(0px, 0px) rotate(0turn);
-  }
-}
-@keyframes fadeRotation {
-  from {
-    transform: rotate(0turn);
-    opacity: 1;
-  }
-  to {
-    transform: rotate(1.5turn);
-    opacity: 0;
-  }
-}
-.titleMenu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  position: relative;
-  margin-top: -55px;
-  padding: 40px 40px 10px 40px;
-  border-radius: 55px 55px 0 0;
-  background-color: #fafafa;
-}
-.titleMenu h1 {
-  font-family: "Shrikhand", cursive;
 }
 
 @keyframes fadeOpacity {
@@ -942,6 +800,36 @@ i {
     opacity: 0;
   }
 }
+.imageMenu {
+  width: 100%;
+  object-fit: cover;
+  height: 273px;
+}
+@media (min-width: 768px) {
+  .imageMenu {
+    height: 390px;
+  }
+}
+@media (min-width: 1024px) {
+  .imageMenu {
+    height: 450px;
+  }
+}
+
+.titleMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  margin-top: -55px;
+  padding: 40px 40px 10px 40px;
+  border-radius: 55px 55px 0 0;
+  background-color: #fafafa;
+}
+.titleMenu h1 {
+  font-family: "Shrikhand", cursive;
+}
+
 .firstLoading {
   animation: fadeOpacityTranslate 4s;
 }
