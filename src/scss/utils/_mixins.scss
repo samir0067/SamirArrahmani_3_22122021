@@ -1,5 +1,4 @@
 @import "variables";
-@import "functions";
 
 @mixin border($color:$colorPrimary) {
   border: .1rem solid $color;
