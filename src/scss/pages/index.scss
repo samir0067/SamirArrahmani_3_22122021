@@ -3,10 +3,9 @@
 
 .titleContainer {
   padding: 20px;
-  display: flex;
+  @include flexColumn;
   width: inherit;
   align-items: center;
-  flex-direction: column;
   background-color: lighten($colorBlack, 96.5%);
   &_title {
     text-align: center;
@@ -36,7 +35,7 @@
   justify-content: center;
   animation: fadeOpacityTranslate 4s;
   @media (min-width: map-get($breakpoints, tablet)) {
-    flex-direction: row;
+    @include flexRow;
     flex-wrap: wrap;
     justify-content: space-around;
   }

@@ -18,8 +18,7 @@
     width: 100%;
     text-align: center;
     @media (min-width: map-get($breakpoints, tablet)) {
-      display: flex;
-      flex-direction: row;
+      @include flexRow;
       justify-content: space-around;
     }
     &_logoContainer {
