@@ -257,7 +257,7 @@ i {
   background: linear-gradient(#9356DC, #FF79DA);
   background-clip: border-box;
   -webkit-background-clip: text;
-  transform: translateY(-29px);
+  transform: translateY(-24px);
 }
 
 .overlay {
